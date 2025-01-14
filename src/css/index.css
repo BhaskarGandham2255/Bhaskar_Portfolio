@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "YAFdJmu7CPY 0", _fb_, auto; */
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -32,14 +31,6 @@ header{
   font-weight: 700;
   letter-spacing: 1.5px;
   padding: 5px 25px;
-
-  /* font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-variation-settings: "wdth" 100;
-    font-style: normal; */
-    /* font-size: 1.5rem; */ 
-    /* box-shadow: 13px 10px 5px orange; */
-  /* border: 0.1px solid black; */
 }
 
 .nav-item .nav-link{
@@ -60,7 +51,6 @@ section{
 
 
 .section-1{
-  /* margin-top: ; */
   padding: 40px 120px 20px 120px ;
 }
 
@@ -80,11 +70,6 @@ section{
 }
 
 .s1-c1 .main-heading {
-  /* font-family: "Roboto", serif;
-  font-optical-sizing: auto;
-  font-variation-settings: "wdth" 100;
-  font-style: normal; */
-
   margin-bottom: 30px;
   font-weight: 500;
   line-height: 47px;
@@ -104,7 +89,6 @@ section{
 
 
 /* section-2 */
-
 .section-2{
   background-color: white;
 }
@@ -123,13 +107,6 @@ section{
 
 .s2-c2 .heading , .s3-c1 .heading , .s4-c1 .heading,.s5-c1 .heading,.footer .heading
 {
-  /* font-family: "Roboto", serif;
-  font-optical-sizing: auto;
-  font-variation-settings: "wdth" 100;
-  font-style: normal;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.5px; */
   color: black;
   letter-spacing: 0;
   margin-bottom: 1.5rem;
@@ -147,7 +124,6 @@ section{
 }
 
 /* section-3 */
-
 .section-3,.section-4,.section-5
 {
   padding: 50px 49px;
@@ -157,7 +133,9 @@ section{
 {
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  padding: 20px 50px;
+  padding: 20px 30px;
+  gap: 10px;
+  flex-wrap: wrap;
   box-shadow: 13px 11px 1px orange;
 }
 
@@ -175,7 +153,6 @@ section{
 }
 
 /* section-4 */
-
 .section-4
 {
   background-color: white;
@@ -184,7 +161,6 @@ section{
 .skills-logo
 {
   width: 150px;
-  box-shadow: 0px 0px 2 5px rgb(78, 76, 76);
 }
 
 .skills-list
@@ -194,29 +170,21 @@ section{
 
 .card
 {
-  /* background: rgb(0, 0, 0,0.1); */
   color: white;
   background-color:black;
   width: 280px;
   border-radius: 15px;
   padding: 25px 10px;
-  /* border:3px solid orange; */
-  /* outline:1px solid black; */
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .card:hover
 {
-  /* background:white; */
-  /* border: 1.5px solid black; */
-  /* border-radius: 10px; */
   box-shadow: white 0 0 20px; 
   transform: scale(1.05);
 }
 
 /* secction-5 */
-
-
 .prj-link
 {
   background: orange;
@@ -224,7 +192,7 @@ section{
 
 .prjt-card
 {
-  width: 30%;
+  width: 25%;
 }
 
 .prjt-card:hover img{
@@ -233,12 +201,20 @@ section{
   box-shadow: 0 0 30px black;
 }
 
-/*  footer  */
 
+/*  footer  */
 .footer
 {
   background-color: white;
   padding: 50px 50px;
+}
+
+.contact-container
+{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  
 }
 
 .f-sub-title{
@@ -257,10 +233,19 @@ section{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.text-area
-{
-  height: 150px;
-}
+ .text-box
+  {
+      width: 100%;
+  } 
+
+  .text-area
+  {
+    height: 150px;
+  }
+
+  .mail-frm{
+    width: 25%;
+  }
 
 
 /* ----------------------------------- for small screens ----------------------------------- */
@@ -288,22 +273,24 @@ section{
     padding: 15px 10px ;
    }
 
-   .nav-link:hover
+   .menu-link:hover, .nav-item:hover .menu-link
    {
-    font-size:19px ;
+
+    /* font-size:1px ; */
     font-weight: bold;
     background-color: black;
-    box-shadow:0 0 10px white;
-    border-radius: 5px;
+    padding: 8px 35px ;
+    border-bottom: 1px solid black;
+    /* box-shadow:0 0 10px white; */
+    border-radius: 20px;
    }
 
    /* section-1 */
-  
    .section-1,.section-2
    {
     flex-direction: column;
     gap:0px ;
-    padding: 0 18px;
+    padding: 45px 19px 36px;
    }
 
    .s1-c1,.s1-c2
@@ -320,7 +307,6 @@ section{
 
    .profile-pic
    {
-      margin-bottom: 125px;
       margin-left: 0;
       width:280px;
    }
@@ -336,7 +322,6 @@ section{
 
    .s2-c1,.s2-c2
    {
-    /* height: 350px; */
     padding: 0px 10px;
     width:100%;
    }
@@ -358,4 +343,42 @@ section{
       width:300px;
     }
 
-  }
+    /* section-3 */
+    .edu-container
+    {
+      flex-direction: column;
+      row-gap: 51px;
+    }
+
+    /* section-4 */
+    .skills-logo
+    {
+      width: 200px;
+    }
+
+    /* section-5 */
+    .prjt-container
+    {
+      flex-direction: column;
+    }
+
+    .prjt-card
+    {
+      width: 80%;
+    }
+
+    /* footer */
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 30px;
+     }
+
+
+    .mail-frm
+    {
+      width:75%;
+    }
+}

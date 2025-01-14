@@ -47,6 +47,7 @@
                 <li class="nav-item mx-4">
                   <a class="nav-link" href="#section-1">
                     <span
+                     class="menu-link"
                       data-bs-target="#navbarNavDropdown"
                       data-bs-toggle="collapse"
                       >Home</span
@@ -56,6 +57,7 @@
                 <li class="nav-item mx-4">
                   <a class="nav-link" href="#section-2">
                     <span
+                      class="menu-link"
                       data-bs-target="#navbarNavDropdown"
                       data-bs-toggle="collapse"
                       >About</span
@@ -65,6 +67,7 @@
                 <li class="nav-item mx-4">
                   <a class="nav-link" href="#section-3">
                     <span
+                      class="menu-link"
                       data-bs-target="#navbarNavDropdown"
                       data-bs-toggle="collapse"
                       >Education</span
@@ -74,6 +77,7 @@
                 <li class="nav-item mx-4">
                   <a class="nav-link" href="#section-4">
                     <span
+                      class="menu-link"
                       data-bs-target="#navbarNavDropdown"
                       data-bs-toggle="collapse"
                       >Skills</span
@@ -83,6 +87,7 @@
                 <li class="nav-item mx-4">
                   <a class="nav-link" href="#section-5">
                     <span
+                      class="menu-link"
                       data-bs-target="#navbarNavDropdown"
                       data-bs-toggle="collapse"
                       >Projects</span
@@ -92,6 +97,7 @@
                 <li class="nav-item mx-4">
                   <a class="nav-link" href="#section-6">
                     <span
+                      class="menu-link"
                       data-bs-target="#navbarNavDropdown"
                       data-bs-toggle="collapse"
                       >Contact</span
@@ -196,7 +202,7 @@
             <h2 class="text-uppercase heading text-black">Education</h2>
           </div>
           <div
-            class="mt-4 d-flex align-items-center justify-content-between w-100"
+            class="mt-4 d-flex align-items-center justify-content-between w-100 edu-container"
           >
             <div class="edu-card bg-light">
               <div class="mb-3">
@@ -342,7 +348,7 @@
             <h2 class="text-uppercase heading text-black">Projects</h2>
           </div>
           <div
-            class="mt-4 skills-list d-flex flex-wrap justify-content-center align-items-center w-100"
+            class="mt-4 skills-list d-flex flex-wrap justify-content-center align-items-center w-100 prjt-container"
           >
             <div class="bg-black prjt-card">
               <a
@@ -376,15 +382,15 @@
         <!-- footer -->
         <footer>
           <div
-            class="footer d-flex flex-column justify-content-center align-items-center w-100"
+            class="footer d-flex flex-column align-items-center w-100"
             id="footer"
           >
             <h2 class="text-uppercase heading text-center">Contact</h2>
 
             <div
-              class="d-flex justify-content-evenly align-items-start f-c1 w-100 mt-4"
+              class="w-100 mt-4 contact-container"
             >
-                <div>
+                <div class="d-flex flex-column justify-content-start">
                   <h5 class="fw-bold mb-4"><span class="f-sub-title">Contact Details </span></h5>
                   <span class="">
                     <a href="mailto:bhaskargandham2255@gmail.com" target="_blank" class="text-decoration-none text-black">
@@ -393,11 +399,15 @@
                   </span>
                   
                   <div>
+                  
+                    
+                    <a href="../public/resume/Gandham_Bhaskar.pdf" download="Gandham_Bhaskar">
                     <button class="btn btn-warning fw-bold my-4 px-5 py-2 resume-btn ">Download CV <i class="fa-solid fa-download ms-2"></i></button> 
+                    </a>
                   </div>
                 </div>
 
-                <div>
+                <div class="d-flex flex-column justify-content-start">
                   <h5 class=" fw-bold mb-4">
                     <span class="f-sub-title">Connect with me </span>
                   </h5>
@@ -430,14 +440,14 @@
                 </div>
 
 
-                <div class="w-25">
+                <div class="d-flex flex-column justify-content-center mail-frm">
                   <h5 class="fw-bold mb-4 "><span class="f-sub-title">Send a Mail</span></h5>
-                  <form id="contactForm" class="">
+                  <form id="contactForm" class="mail-container">
                     <div class="mb-3">
-                      <input type="text" id="subject" class="form-control" placeholder="Subject" required/>
+                      <input type="text" id="subject" class="form-control text-box" placeholder="Subject" required/>
                     </div>
                     <div class="mb-3">
-                      <textarea id="message" class="form-control text-area" placeholder="Message" required></textarea>
+                      <textarea id="message" class="form-control text-area  text-box" placeholder="Message" required></textarea>
                     </div>
                     <button type="button" onclick="sendMail()" class="btn btn-warning px-5 py-2 fw-bold submit-btn">Submit</button>
                   </form>
