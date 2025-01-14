@@ -34,12 +34,14 @@ header{
 }
 
 .nav-item .nav-link{
+    font-weight: bold;
     color: black;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .nav-link:hover{
-    color: orange;
+  font-weight: bolder;
+  color: white;
 }
 
 
@@ -60,7 +62,7 @@ section{
   width: 380px;
   border-top-right-radius: 25%;
   border-bottom-left-radius: 25%;
-  box-shadow: 41px 26px 1px orange;
+  box-shadow: 40px 25px 1px orange;
 }
 
 .s1-c1,.s1-c2
@@ -114,7 +116,7 @@ section{
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.23333;
-  border-bottom: 5px solid black;
+  border-bottom: 5px ridge black;
 }
 
 .about-paragragh{
@@ -275,13 +277,11 @@ section{
 
    .menu-link:hover, .nav-item:hover .menu-link
    {
-
-    /* font-size:1px ; */
+    color:white;
     font-weight: bold;
     background-color: black;
     padding: 8px 35px ;
     border-bottom: 1px solid black;
-    /* box-shadow:0 0 10px white; */
     border-radius: 20px;
    }
 
@@ -354,6 +354,11 @@ section{
     .skills-logo
     {
       width: 200px;
+    }
+
+    .card:hover
+    {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     /* section-5 */
